@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/aishwaryasuresh020-source/contact-service.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean compile'
